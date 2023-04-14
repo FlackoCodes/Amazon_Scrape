@@ -21,8 +21,8 @@ price_tag = soup.find(name="span", class_="a-offscreen")
 price_of_ps5 = float((price_tag.text.strip("$")))
 
 if price_of_ps5 < 400:
-    account_sid = "ACc87e71b0432c983f32485d10b5d0f9fd"
-    auth_token = "2ba3267cf82f5aebee56ef87896d0341"
+    account_sid = "*****************************"
+    auth_token = "******************************"
     client = Client(account_sid, auth_token)
     message = client.messages.create(
         body=f" The price of PS5 has dropped to {price_of_ps5} buy it ASAP.",
